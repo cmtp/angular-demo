@@ -8,7 +8,8 @@
     UsersService.$inject = ['$http', 'URL_SERVICE'];
     function UsersService($http, URL_SERVICE) {
         var service = {
-            getUsers:getUsers
+            getUsers:getUsers,
+            getUsersFrom: getUsersFrom
         };
         
         return service;
@@ -20,6 +21,14 @@
                 method: 'GET'
             });
 
+            return global;
+        }
+
+        function getUsersFrom( last ) {
+            var global = $http({
+                url: URL_SERVICE.APPLICATION + '/users?since=' + last,
+                method: 'GET'
+            });
             return global;
         }
     }

@@ -16,6 +16,9 @@
             })
             .state('home.repos', {
                 url: '/users/:id/repos',
+                params: {
+                    id: null
+                },
                 templateUrl: 'app/users/repos.html',
                 controller: 'ReposController as rvm'
             });

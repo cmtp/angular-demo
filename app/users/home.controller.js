@@ -7,9 +7,10 @@
 
     HomeController.$inject = ['$log', 'UsersService'];
     function HomeController($log, UsersService) {
-        var vm = this;
+        var hvm = this;
+        hvm.last = 0;
         // functions
-        vm.getUsersFrom = getUsersFrom;
+        hvm.getUsersFrom = getUsersFrom;
         
         activate();
 
@@ -17,8 +18,7 @@
 
         function activate() {
             UsersService.getUsers().then(function (response) {
-                vm.users = response.data;
-                $log.log(response);
+                hvm.users = response.data;
             }).catch(function (err) {
                 $log.error(err);
             });
@@ -28,6 +28,7 @@
             $log.log(id);
             UsersService.getUsersFrom(id).then(function (response) {
                 $log.log(response);
+                hvm.users = response.data;
             }).catch(function (err) {
                 $log.error(err);
             });

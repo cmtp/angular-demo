@@ -14,8 +14,8 @@
                 templateUrl: 'app/users/home.html',
                 controller: 'HomeController as hvm'
             })
-            .state('home.repos', {
-                url: '/users/:id/repos',
+            .state('repos', {
+                url: 'users/:id/repos',
                 params: {
                     id: null
                 },

@@ -28,7 +28,7 @@
     "angular": "^1.6.4",
     "angular-translate": "^2.15.1",
     "angular-ui-router": "^1.0.3",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.2.1"
   },
   "devDependencies": {

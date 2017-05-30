@@ -19,23 +19,9 @@
     var translations = {
         'HELLO':'hello',
         'WORLD':'world',
-        // map properties
-        'TEXT.MAP.CLEAN':'Clean',
-        'TITLE': 'Provider Directory',
-        '':''
     };
     var translations_es = {
         'HELLO':'hola',
-        'WORLD':'mundo',
-        'TITLE': 'Sistema Dental',
-        // login
-        'USERNAME': 'Nombre de Usuario',
-        'PASSWORD': 'Password',
-        // nav
-        'HOME': 'Inicio',
-        'USERS': 'Usuarios',
-        'PATIENTS': 'Pacientes',
-        'SCHEDULE': 'Horarios',
-        'BACKUP': 'backup'
+        'WORLD':'mundo'
     };
 })();

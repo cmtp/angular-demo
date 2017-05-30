@@ -15,7 +15,7 @@
                 controller: 'HomeController as hvm'
             })
             .state('home.repos', {
-                url: '/users/repos',
+                url: '/users/:id/repos',
                 templateUrl: 'app/users/repos.html',
                 controller: 'ReposController as rvm'
             });

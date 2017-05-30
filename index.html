@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-app="app">
-    <div ui-view></div>
+    <div ng-controller="TopNavController as vm">
+        <ui-view></ui-view>
+    </div>
     <!--libraries -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -21,7 +23,7 @@
 
     <!-- app module -->
     <script src="app/app.module.js"></script>
-
+    <script src="app/app.routes.js"></script>
     <!-- core module -->
     <script src="app/core/core.module.js"></script>
     <script src="app/core/core.config.js"></script>
@@ -29,5 +31,11 @@
     <script src="app/core/core.properties.js"></script>
 
     <script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/topNav.controller.js"></script>
+
+    <script src="app/users/users.module.js"></script>
+    <script src="app/users/home.controller.js"></script>
+    <script src="app/users/repos.controller.js"></script>
+
 </body>
 </html>

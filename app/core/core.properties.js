@@ -1,6 +1,4 @@
 /**
- * @namespace app
- * @desc translate configuration
  * @author ctola
  */
 (function () {
@@ -9,12 +7,7 @@
         .module('app.core')
         .config(Properties);
     Properties.$inject = ['$translateProvider'];
-    /**
-     * @namespace Properties
-     * @desc translate properties
-     * @param $translateProvider
-     * @constructor
-     */
+
     function Properties($translateProvider) {
         $translateProvider.translations('en',translations);
         $translateProvider.translations('es', translations_es);
@@ -44,5 +37,5 @@
         'PATIENTS': 'Pacientes',
         'SCHEDULE': 'Horarios',
         'BACKUP': 'backup'
-    }
+    };
 })();

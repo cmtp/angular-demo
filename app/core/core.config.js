@@ -6,6 +6,6 @@
 
     configUrls.$inject = ['$locationProvider'];
     function configUrls($locationProvider) {
-        $locationProvider.html5mode(true);
+        $locationProvider.html5Mode(true);
     }
 })();

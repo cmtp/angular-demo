@@ -15,7 +15,7 @@
                 controller: 'HomeController as hvm'
             })
             .state('repos', {
-                url: 'users/:id/repos',
+                url: '/users/:id/repos',
                 params: {
                     id: null
                 },

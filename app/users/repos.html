@@ -1,6 +1,6 @@
 <!--<h1>hello</h1>-->
 <div class="col-md-12">
-    <h1>Repositories</h1>
+    <h1>{{'REP_TITLE' | translate}}</h1>
 </div>
 <div class="row">
     <div class="row col-sm-6 col-md-4 col-lg-3 custom-card" ng-repeat="item in rvm.repos">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="row col-sm-6 col-md-4 col-lg-3" ng-repeat="item in hvm.users">
-        <button ng-show="$last" ng-click="hvm.getUsersFrom(item.id);">More Users</button>
+        <button ng-show="$last" ng-click="hvm.getUsersFrom(item.id);">{{'MORE' | translate }}}</button>
     </div>
 </div>
 <nav aria-label="Page navigation example">

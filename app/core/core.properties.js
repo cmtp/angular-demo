@@ -10,18 +10,16 @@
 
     function Properties($translateProvider) {
         $translateProvider.translations('en',translations);
-        $translateProvider.translations('es', translations_es);
         $translateProvider.preferredLanguage('en');
         $translateProvider.useSanitizeValueStrategy('escape');
     }
 
     // en
     var translations = {
-        'HELLO':'hello',
-        'WORLD':'world',
-    };
-    var translations_es = {
-        'HELLO':'hola',
-        'WORLD':'mundo'
+        'MORE':'More Users',
+        'GIT':'Github Page',
+        'REP': 'Repos',
+        'REP_TITLE': 'Repositories',
+        'USERS_TITLE': 'Users'
     };
 })();

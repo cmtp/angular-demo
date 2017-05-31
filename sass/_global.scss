@@ -2,9 +2,12 @@ img.avatar {
     width: 100px;
 }
 .custom-card {
-    background: #cecece;
+    background: #efefef;
     border: solid 1px;
     max-width: 300px;
     margin: 5px 5px;
     @include border-radius(10px);
+    a {
+        color: green;
+    }
 }

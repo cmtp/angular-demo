@@ -12,15 +12,6 @@
 </head>
 <body ng-app="app">
     <div ng-controller="TopNavController as vm" class="col-md-12">
-        <nav class="row navbar navbar-light bg-faded">
-            <a href="" class="navbar-brand" ng-if="undefined != vm.user">
-                <img ng-src="{{vm.user.avatar_url}}" width="30" height="30" class="d-inline-block align-top" alt="">
-                {{vm.user.login}}
-            </a>
-            <!--<a href="" class="navbar-brand" ng-if="undefined != vm.user">
-                <img ng-src="{{vm.user.avatar_url}}" width="30" height="30" class="d-inline-block align-top" alt="">
-            </a>-->
-        </nav>
         <ui-view></ui-view>
     </div>
     <!--libraries -->

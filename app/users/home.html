@@ -1,4 +1,7 @@
 <div class="row col-md-12">
+    <h1>Users</h1>
+</div>
+<div class="row col-md-12">
     <div class="row col-sm-6 col-md-4 col-lg-3 custom-card" ng-repeat="item in hvm.users">
         <div class="col-xs-6 col-sm-6 col-md-6">
             <img class="avatar" ng-src="{{item.avatar_url}}" alt="">
@@ -10,6 +13,6 @@
         </div>
     </div>
     <div class="row col-sm-6 col-md-4 col-lg-3" ng-repeat="item in hvm.users">
-        <button ng-show="$last" ng-click="hvm.getUsersFrom(item.id);">More Users</button>
+        <button type="button" class="btn btn-info" ng-show="$last" ng-click="hvm.getUsersFrom(item.id);"><i class="fa fa-plus"></i>More Users</button>
     </div>
 </div>

@@ -20,6 +20,8 @@
         'GIT':'Github Page',
         'REP': 'Repos',
         'REP_TITLE': 'Repositories',
-        'USERS_TITLE': 'Users'
+        'USERS_TITLE': 'Users',
+        'PREV': 'Previous',
+        'NEXT': 'Next'
     };
 })();

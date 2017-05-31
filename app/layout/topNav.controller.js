@@ -15,14 +15,17 @@
         ////////////////
 
         function activate() {
-            UsersService.getUser(vm.id).then(function (res) {
-                console.log(res);
-                if( undefined !== $stateParams.id ) {
-                    vm.user = res.data;
-                }
-            }).catch(function (err) {
-                console.log(err);
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
             });
+            // UsersService.getUser(vm.id).then(function (res) {
+            //     console.log(res);
+            //     if( undefined !== $stateParams.id ) {
+            //         vm.user = res.data;
+            //     }
+            // }).catch(function (err) {
+            //     console.log(err);
+            // });
         }
     }
 })();

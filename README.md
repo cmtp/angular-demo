@@ -11,6 +11,7 @@ This is a demo of angularjs using github api v3
 - Create Tasks for minify css and js scripts.
 - Export Project to Angular 2.
 - Separe into components
+- Add Unit Test
 
 ## Instructions
 

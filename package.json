@@ -29,7 +29,8 @@
     "angular-translate": "^2.15.1",
     "angular-ui-router": "^1.0.3",
     "bootstrap": "^4.0.0-alpha.6",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.98.2"
   },
   "devDependencies": {
     "concurrently": "^3.4.0",

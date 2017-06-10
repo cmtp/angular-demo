@@ -22,6 +22,10 @@
             }).catch(function (err) {
                 $log.error(err);
             });
+            // activate jquery tooltip
+            $(document).ready(function(){
+                $('.tooltipped').tooltip({delay: 50});
+            });
         }
 
         function getUsersFrom(id) {

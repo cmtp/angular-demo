@@ -22,6 +22,9 @@
             }).catch(function (err) {
                 console.log(err);
             });
+            $(document).ready(function(){
+                $('.tooltipped').tooltip({delay: 50});
+            });
         }
     }
 })();

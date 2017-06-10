@@ -21,7 +21,8 @@
         'REP': 'Repos',
         'REP_TITLE': 'Repositories',
         'USERS_TITLE': 'Users',
-        'PREV': 'Previous',
-        'NEXT': 'Next'
+        'PREV': 'chevron_left',
+        'NEXT': 'chevron_right',
+        'MORE_USER': 'More Users'
     };
 })();

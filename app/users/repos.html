@@ -1,40 +1,39 @@
 <!--<h1>hello</h1>-->
-<div class="col-md-12">
+<div class="row col s12">
     <h1>{{'REP_TITLE' | translate}}</h1>
 </div>
 <div class="row">
-    <div class="row col-sm-6 col-md-4 col-lg-3 custom-card" ng-repeat="item in rvm.repos">
-        <div class="col-md-12">
-            <h5><a href="{{item.html_url}}" target="blank"><h6>{{item.name}}</h6></a></h5>
+    <div class="col s6 m4 l3" ng-repeat="item in rvm.repos">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <h5 class="card-title"><a href="{{item.html_url}}" target="blank"><h6>{{item.name}}</h6></a></h5>
+                <p>{{item.description}}</p>
+            </div>
+            <div class="card-action">
+                <span class="tooltipped" data-delay="50" data-position="bottom" data-tooltip="Open Issues">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    {{item.open_issues}}
+                </span>
+                <span class="tooltipped" data-delay="50" data-position="bottom" data-tooltip="Forks">
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                    {{item.forks}}
+                </span>
+                <span class="tooltipped" data-delay="50" data-position="bottom" data-tooltip="Issues">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    {{item.open_issues_count}}
+                </span>
+            </div>
         </div>
-        <div class="col-md-12">
-            <p>{{item.description}}</p>
-        </div>
-        <div class="col-md-12">
-            <span data-toogle="tooltip" data-placement="bottom" title="Open Issues">
-                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                {{item.open_issues}}
-            </span>
-            <span data-toogle="tooltip" data-placement="bottom" title="Forks">
-                <i class="fa fa-code-fork" aria-hidden="true"></i>
-                {{item.forks}}
-            </span>
-            <span data-toogle="tooltip" data-placement="bottom" title="Issues">
-                <i class="fa fa-github-square" aria-hidden="true"></i>
-                {{item.open_issues_count}}
-            </span>
-        </div>
-    </div>
     <div class="row col-sm-6 col-md-4 col-lg-3" ng-repeat="item in hvm.users">
         <button ng-show="$last" ng-click="hvm.getUsersFrom(item.id);">{{'MORE' | translate }}}</button>
     </div>
 </div>
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">{{'PREV' | translate}}</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">{{'NEXT' | translate}}</a></li>
+<div aria-label="row">
+  <ul class="pagination col s6 offset-s3">
+    <li class="waves-effect"><a class="" href="#"><i class="material-icons">{{'PREV' | translate}}</i></a></li>
+    <li class="active"><a class="" href="#">1</a></li>
+    <li class="waves-effect"><a class="" href="#">2</a></li>
+    <li class="waves-effect"><a class="" href="#">3</a></li>
+    <li class="waves-effect"><a class="" href="#"><i class="material-icons">{{'NEXT' | translate}}</i></a></li>
   </ul>
-</nav>
+</div>

@@ -1,3 +1,6 @@
+<div class="row col l12">
+    <h1>{{'USERS_TITLE' | translate}}</h1>
+</div>
 <div class="row">
     <div class=" col s6 m4 l3" ng-repeat="item in hvm.users">
         <div class="card">
@@ -6,8 +9,8 @@
                 <span class="card-title">{{item.login}}</span>
             </div>
             <div class="card-action">
-                <a href="{{item.html_url}}" target="blank">Github Page</a>
-                <a ui-sref="repos({id: item.login})">Repos</a>
+                <a href="{{item.html_url}}" target="blank">{{ 'GIT' | translate }}</a>
+                <a ui-sref="repos({id: item.login})">{{ 'REP' | translate }}</a>
             </div>
         </div>
     </div>
